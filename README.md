@@ -1,6 +1,6 @@
 # Chendi Zhou Personal Site
 
-一个可直接部署到 GitHub Pages 的双语个人主页，使用 `HTML + CSS + 少量 JavaScript` 构建，定位更接近 AI researcher / AI builder 的个人作品集，而不是传统简历模板。
+一个可直接部署到 GitHub Pages 的双语学术个人主页，使用 `HTML + CSS + 少量 JavaScript` 构建，定位更接近 academic research profile / research statement，而不是传统简历模板。
 
 ## 文件结构
 

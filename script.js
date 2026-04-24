@@ -20,73 +20,74 @@ const SITE_CONFIG = {
 const SITE_CONTENT = {
   en: {
     meta: {
-      title: "Chendi Zhou - AI Systems Notes",
+      title: "Chendi Zhou - Research Profile",
       description:
-        "Chendi Zhou - notes on LLM systems, diffusion language models, agent workflows, and AI-native products.",
+        "Chendi Zhou - research profile on LLM systems, diffusion language models, code generation, agent workflows, and AI evaluation.",
     },
     brand: {
       name: "Chendi Zhou",
-      role: "AI systems notes",
+      role: "Research profile",
     },
     nav: [
-      { id: "profile", label: "Statement" },
-      { id: "research", label: "Question" },
-      { id: "projects", label: "Systems" },
-      { id: "experience", label: "Context" },
+      { id: "profile", label: "Profile" },
+      { id: "research", label: "Research" },
+      { id: "projects", label: "Cases" },
+      { id: "experience", label: "Bio" },
       { id: "skills", label: "Methods" },
-      { id: "thinking", label: "Position" },
+      { id: "thinking", label: "Notes" },
     ],
     languageSwitchLabel: "Language switcher",
     backToTop: "Back to top",
     backToTopShort: "Top",
     hero: {
-      eyebrow: "Personal research statement / working notes",
+      eyebrow: "Research profile for academic review contexts",
       name: "Chendi Zhou / 周晨迪",
       titleLines: [
-        "AI systems should be studied",
-        "as workflows, interfaces, and constraints.",
+        "LLM Systems",
+        "Diffusion Language Models",
+        "Agent Workflows",
       ],
       abstractTitle: "Abstract",
       abstract:
-        "I am an MSc Computer Science student at The University of Hong Kong, working around LLM systems, diffusion language models, agent workflows, and AI-native learning products. The thread I keep returning to is simple: model capability matters, but the usable system is shaped just as much by decoding, retrieval, tool boundaries, memory, latency, and interface design.",
+        "I am an MSc Computer Science student at The University of Hong Kong. My current research interests are LLM systems, diffusion language models for code generation, agent workflows, retrieval-augmented systems, and evaluation of controllability, efficiency, and safety. I am especially interested in how model behavior changes once generation is embedded in workflows with tools, retrieval, memory, permissions, and human-facing interfaces.",
       actions: [
         { label: "Email", key: "email", primary: true },
         { label: "GitHub", key: "github" },
       ],
       notes: [
-        { label: "Current affiliation", value: "MSc Computer Science, HKU" },
-        { label: "Prior background", value: "IoT Engineering, BUPT" },
-        { label: "Current lab work", value: "HKU NLP Lab, dLLM for code generation" },
-        { label: "Working mode", value: "Research question -> small system -> evaluation" },
+        { label: "Affiliation", value: "MSc Computer Science, The University of Hong Kong" },
+        { label: "Lab", value: "HKU NLP Lab, Research Assistant" },
+        { label: "Research interests", value: "LLM systems; dLLM; code generation; agent safety; RAG; evaluation" },
+        { label: "Background", value: "BEng Internet of Things Engineering, BUPT" },
       ],
     },
     statement: {
-      kicker: "01 / Statement",
-      title: "I am interested in the part of AI that happens after a model becomes capable.",
+      kicker: "01 / Profile",
+      title: "I study language model systems as combinations of models, decoding procedures, tools, retrieval, and human constraints.",
       paragraphs: [
-        "A stronger model is rarely enough by itself. Once it is placed inside a product or an agent workflow, the important questions become more concrete: what context does it receive, which tools can it call, how much memory should it keep, where does permission live, and how does a user know when to trust the output.",
-        "This is why my work has moved between NLP research, AI product design, and engineering prototypes. I use research questions to choose what to build, and I use working systems to make the research question less vague.",
-        "The page below is organized as a set of connected notes rather than a chronological resume. The details are still here, but the main object is the line of thinking behind them.",
+        "My broad interest is in the systems layer around modern language models. A model's capability is only one part of system behavior; generation is also shaped by decoding, context construction, retrieval quality, tool access, latency, memory, and user interaction.",
+        "This perspective connects my current work on diffusion language models with my prototype work on AI-assisted learning and contextual explanation. In both cases, the core question is how to make model outputs more grounded, controllable, efficient, and useful under realistic constraints.",
+        "For academic review contexts, I would describe my areas as LLM systems, code generation, diffusion language models, agent workflows, retrieval-augmented generation, and human-centered evaluation of AI systems.",
       ],
       margin: {
-        title: "Background, compressed",
+        title: "Academic background",
         lines: [
-          "HKU, MSc Computer Science",
-          "BUPT, BEng Internet of Things Engineering",
-          "LLM / NLP / Deep Learning / Network Security coursework",
+          "MSc Computer Science, HKU",
+          "BEng Internet of Things Engineering, BUPT",
+          "Coursework: LLM, NLP, Deep Learning, Network Security",
         ],
       },
     },
     question: {
-      kicker: "02 / Research question",
-      title: "How do generation quality, efficiency, and controllability trade off in language generation systems?",
+      kicker: "02 / Current research",
+      title: "Current work: diffusion language models for code generation.",
       paragraphs: [
-        "At HKU NLP Lab, I am exploring diffusion language models for code generation. The work is not only about whether a model can generate code, but also about how decoding choices change the shape of the generation process.",
-        "The research lens is practical: decoding strategy, inference cost, generation quality, and controllability are not independent variables. Better control can introduce latency; faster inference can change quality; evaluation has to capture more than pass or fail.",
-        "This interest also connects to agent systems. Once a model can act through tools, decoding and control are no longer purely model-side concerns. They become system-side design problems.",
+        "At HKU NLP Lab, I am working as a Research Assistant on exploratory research around diffusion language models for code generation. The work focuses on decoding strategies, generation quality, inference efficiency, and the trade-off between controllability and performance.",
+        "The research question is practical as well as methodological: decoding strategy, inference cost, generation quality, and controllability are coupled. More control can introduce additional cost; faster inference can change quality; evaluation should capture properties beyond binary success.",
+        "This line of work also informs my interest in agent systems. Once a language model is embedded in a workflow with tools, the boundary between model-level generation control and system-level safety becomes less clean.",
       ],
       margin: {
-        title: "Current focus",
+        title: "Research keywords",
         lines: [
           "Diffusion language models",
           "Code generation",
@@ -96,19 +97,19 @@ const SITE_CONTENT = {
       },
     },
     systems: {
-      kicker: "03 / System studies",
-      title: "Two projects are useful because they expose different edges of the same problem.",
+      kicker: "03 / Research-oriented prototypes",
+      title: "I use prototypes to make system-level research questions concrete.",
       intro:
-        "DeepTutor and LinguaLens look different on the surface: one is about learning from course materials, the other is about understanding subtitles in context. Underneath, both ask how an AI product should organize context, action, explanation, and user attention.",
+        "The following systems are research-oriented prototypes rather than portfolio demos. I use them to study context construction, retrieval, explanation, user attention, and workflow design in applied LLM systems.",
       cases: [
         {
           name: "DeepTutor",
           subtitle:
-            "From chat-based tutoring toward a structured learning loop.",
+            "A multi-agent learning system prototype for structured knowledge construction.",
           paragraphs: [
-            "DeepTutor started from an open-source multi-agent tutoring framework. I extended it with structured note generation, mock exams, knowledge cards, and mind-map modules because a learning system should not end at a chat answer.",
-            "The most interesting part was the note generation pipeline: long course slides need page-range indexing, hierarchical retrieval, and image-aligned generation, otherwise the output becomes fluent but weakly grounded.",
-            "The product direction became a loop: knowledge management -> practice -> research -> output. Codex and Claude Code were useful not as magic builders, but as acceleration tools for implementation and iteration.",
+            "DeepTutor extends an open-source multi-agent tutoring framework with structured note generation, mock exams, knowledge cards, and mind-map modules. The goal is to move beyond single-turn tutoring toward durable learning artifacts.",
+            "The technically interesting component is a hierarchical RAG pipeline for long course materials. Page-range indexing and image-aligned note generation help reduce the gap between fluent summarization and grounded learning notes.",
+            "The resulting workflow connects knowledge management, practice, research, and output. I view it as a prototype for studying how educational AI systems should organize retrieval, generation, and learner feedback.",
           ],
           margin: [
             "Multi-Agent",
@@ -116,17 +117,17 @@ const SITE_CONTENT = {
             "Structured Notes",
             "FastAPI",
             "LLM",
-            "Codex",
+            "Learning Systems",
           ],
         },
         {
           name: "LinguaLens",
           subtitle:
-            "An AI subtitle explanation tool for cross-cultural video understanding.",
+            "A contextual explanation prototype for cross-cultural video understanding.",
           paragraphs: [
-            "LinguaLens began with a small observation: subtitles can translate words but often miss slang, cultural references, and contextual metaphors. The product goal was to reduce the need to leave the video and search elsewhere.",
-            "The interaction split into Quick Explain and Deep Explain. Quick Explain protects the watching flow; Deep Explain gives cultural and contextual depth when the user chooses to pause.",
-            "The MVP combined a Chrome Extension, FastAPI, LLM calls, RAG / online retrieval, DOM extraction, OCR fallback, caching, source display, history, and latency tracking. Most of the design work was about making explanation useful without making it intrusive.",
+            "LinguaLens studies a different form of grounding: subtitles often preserve literal meaning while losing slang, cultural references, and contextual metaphors. The system explores how LLMs can provide situated explanations without forcing users to leave the viewing context.",
+            "The interaction design separates Quick Explain and Deep Explain. This distinction makes latency and interruption visible design variables rather than hidden implementation details.",
+            "The prototype combines a Chrome Extension, FastAPI, LLM calls, RAG / online retrieval, DOM extraction, OCR fallback, caching, source display, history, and latency tracking. It is useful as a compact case study in explanation quality, trust, and user attention.",
           ],
           margin: [
             "Chrome Extension",
@@ -134,35 +135,35 @@ const SITE_CONTENT = {
             "LLM",
             "RAG",
             "OCR",
-            "Product Design",
+            "HCI",
           ],
         },
       ],
     },
     context: {
-      kicker: "04 / Context",
-      title: "Product and platform work gave me a stronger sense of real constraints.",
+      kicker: "04 / Prior technical context",
+      title: "Industry experience shaped how I think about deployment constraints.",
       paragraphs: [
-        "At DiDi, I worked on homepage product iterations, PRDs, technical review, testing, release follow-up, and cross-functional coordination around order-container related modules. That experience made product constraints feel concrete: a system has to survive ownership boundaries, schedules, edge cases, and release risk.",
-        "At Cambricon, I followed LLM papers and inference optimization directions, tested models across NVIDIA GPU and Cambricon hardware environments, and wrote technical investigation notes for model adaptation decisions. That work made the hardware and deployment side of AI systems feel less abstract.",
-        "These two contexts sit in the background of how I build now. I care about research taste, but I also care about whether a system can be shipped, tested, adapted, and understood by people who did not write it.",
+        "At Cambricon, I followed recent LLM papers and inference optimization directions, tested models across NVIDIA GPU and Cambricon hardware environments, and wrote technical investigation notes for model adaptation decisions. This made deployment and hardware constraints more concrete.",
+        "At DiDi, I participated in homepage feature iterations, requirement analysis, PRD writing, technical review, testing, release follow-up, and cross-functional coordination. This experience made me more attentive to reliability, edge cases, and communication across engineering boundaries.",
+        "These contexts are secondary to my research direction, but they affect how I evaluate AI systems: I care not only about capability, but also about reproducibility, latency, adaptation cost, and whether the system can be inspected by others.",
       ],
       margin: {
         title: "Prior contexts",
         lines: [
-          "DiDi, Product Intern",
           "Cambricon, AI Platform Intern",
-          "PRD / testing / release follow-up",
+          "DiDi, Product Intern",
           "LLM paper tracking / model testing",
+          "PRD / testing / release follow-up",
         ],
       },
     },
     methods: {
       kicker: "05 / Methods",
-      title: "The tools are less important than the habit: make the idea executable.",
+      title: "Methods and technical scope.",
       paragraphs: [
-        "I usually move from a research question to a small system quickly. A prototype makes the missing assumptions visible: what the data structure should be, where latency appears, how users interrupt the flow, and where the model needs guardrails.",
-        "The stack changes with the question, but the recurring ingredients are Python, Java, SQL, LLMs, NLP, RAG, dLLM concepts, FastAPI-style services, product prototyping, PRD writing, Figma, Codex, and Claude Code.",
+        "I usually move from a research question to a small controlled prototype. This makes assumptions visible: what data structure is needed, where latency appears, how retrieval changes model behavior, and where evaluation should be inserted.",
+        "The recurring technical scope includes Python, Java, SQL, LLM systems, NLP, RAG, diffusion language models, FastAPI-style services, evaluation design, and interface prototyping for human-AI interaction.",
       ],
       terms: [
         "Python",
@@ -173,19 +174,18 @@ const SITE_CONTENT = {
         "RAG",
         "dLLM",
         "FastAPI",
-        "Figma",
-        "Codex",
-        "Claude Code",
-        "PRD",
+        "Evaluation",
+        "HCI",
+        "System Prototyping",
       ],
     },
     position: {
-      kicker: "06 / Position",
-      title: "A few beliefs I currently build with.",
+      kicker: "06 / Research position",
+      title: "The research question I want to keep pursuing.",
       paragraphs: [
-        "I am interested in AI systems where model capability, tool use, interface design, and safety constraints interact with each other.",
-        "I believe future AI products will not only depend on stronger models, but also on better workflows, permissions, memory, and human-AI interaction design.",
-        "I prefer building small but working systems to validate ideas quickly. A working prototype is often a better research note than a long speculative document.",
+        "I am interested in AI systems where model capability, tool use, retrieval, interface design, and safety constraints interact with each other.",
+        "I believe future language model research will increasingly require system-level evaluation: not only whether a model can produce an answer, but how it behaves inside workflows with memory, permissions, tools, and human feedback.",
+        "My near-term goal is to keep building research prototypes that make these interactions measurable, especially around diffusion language models, code generation, agent workflows, and learning systems.",
       ],
     },
     footer: {
@@ -196,73 +196,74 @@ const SITE_CONTENT = {
   },
   zh: {
     meta: {
-      title: "周晨迪 - AI Systems Notes",
+      title: "周晨迪 - Research Profile",
       description:
-        "周晨迪的个人主页，关注 LLM 系统、diffusion language models、agent workflow 与 AI-native 产品。",
+        "周晨迪的学术主页，关注 LLM 系统、diffusion language models、代码生成、agent workflow 与 AI evaluation。",
     },
     brand: {
       name: "周晨迪",
-      role: "AI systems notes",
+      role: "Research profile",
     },
     nav: [
-      { id: "profile", label: "Statement" },
-      { id: "research", label: "Question" },
-      { id: "projects", label: "Systems" },
-      { id: "experience", label: "Context" },
+      { id: "profile", label: "Profile" },
+      { id: "research", label: "Research" },
+      { id: "projects", label: "Cases" },
+      { id: "experience", label: "Bio" },
       { id: "skills", label: "Methods" },
-      { id: "thinking", label: "Position" },
+      { id: "thinking", label: "Notes" },
     ],
     languageSwitchLabel: "语言切换",
     backToTop: "返回顶部",
     backToTopShort: "顶部",
     hero: {
-      eyebrow: "个人 research statement / working notes",
+      eyebrow: "面向学术场景的 research profile",
       name: "Chendi Zhou / 周晨迪",
       titleLines: [
-        "我更关心模型能力进入系统之后",
-        "会怎样被 workflow、界面和约束重新塑形。",
+        "LLM Systems",
+        "Diffusion Language Models",
+        "Agent Workflows",
       ],
       abstractTitle: "Abstract",
       abstract:
-        "我目前在香港大学攻读计算机科学硕士，关注 LLM systems、diffusion language models、agent workflow 和 AI-native 学习产品。贯穿这些方向的核心问题是：模型能力当然重要，但真正可用的 AI 系统同样取决于 decoding、retrieval、工具边界、记忆、时延和交互设计。",
+        "我目前在香港大学攻读计算机科学硕士，研究兴趣包括 LLM systems、diffusion language models for code generation、agent workflows、retrieval-augmented systems，以及围绕 controllability、efficiency 和 safety 的系统评估。我尤其关注模型进入带有工具、检索、记忆、权限和人机界面的 workflow 后，行为如何发生变化。",
       actions: [
         { label: "Email", key: "email", primary: true },
         { label: "GitHub", key: "github" },
       ],
       notes: [
-        { label: "当前身份", value: "香港大学计算机科学硕士" },
-        { label: "本科背景", value: "北京邮电大学物联网工程" },
-        { label: "实验室方向", value: "HKU NLP Lab, dLLM for code generation" },
-        { label: "工作方式", value: "研究问题 -> 小系统 -> 验证与迭代" },
+        { label: "Affiliation", value: "MSc Computer Science, The University of Hong Kong" },
+        { label: "Lab", value: "HKU NLP Lab, Research Assistant" },
+        { label: "Research interests", value: "LLM systems; dLLM; code generation; agent safety; RAG; evaluation" },
+        { label: "Background", value: "BEng Internet of Things Engineering, BUPT" },
       ],
     },
     statement: {
-      kicker: "01 / Statement",
-      title: "我感兴趣的是模型变强之后，系统层面真正开始变复杂的那一部分。",
+      kicker: "01 / Profile",
+      title: "我把语言模型系统看作模型、解码过程、工具、检索和人类约束的组合。",
       paragraphs: [
-        "更强的模型本身很重要，但当它被放进产品或 agent workflow 里，问题会立刻变得具体：它应该看到什么上下文，可以调用哪些工具，记忆应该保留到什么程度，权限边界在哪里，用户又如何判断输出是否值得信任。",
-        "所以我的经历会在 NLP 研究、AI 产品设计和工程原型之间来回切换。我会用研究问题决定要做什么系统，也会用一个可运行的系统把研究问题变得更清楚。",
-        "这个页面不想写成时间线简历，而更像一组彼此关联的工作笔记。履历细节仍然在，但重点是这些经历背后共同指向的思考。",
+        "我的主要兴趣在现代语言模型周围的 systems layer。模型能力只是系统行为的一部分；生成结果同样受到 decoding、上下文构造、检索质量、工具访问、时延、记忆和用户交互的影响。",
+        "这个视角把我当前关于 diffusion language models 的研究和 AI-assisted learning、contextual explanation 等原型工作连接起来。它们共同关心的是如何在真实约束下让模型输出更 grounded、更可控、更高效，也更容易评估。",
+        "如果放在学术评审语境中，我会把自己的方向概括为 LLM systems、code generation、diffusion language models、agent workflows、retrieval-augmented generation 和 human-centered evaluation of AI systems。",
       ],
       margin: {
-        title: "背景压缩版",
+        title: "Academic background",
         lines: [
-          "香港大学，计算机科学硕士",
-          "北京邮电大学，物联网工程本科",
-          "LLM / NLP / Deep Learning / Network Security 等课程",
+          "MSc Computer Science, HKU",
+          "BEng Internet of Things Engineering, BUPT",
+          "Coursework: LLM, NLP, Deep Learning, Network Security",
         ],
       },
     },
     question: {
-      kicker: "02 / Research question",
-      title: "在语言生成系统里，生成质量、推理效率和可控性如何相互牵制？",
+      kicker: "02 / Current research",
+      title: "Current work: diffusion language models for code generation.",
       paragraphs: [
-        "在 HKU NLP Lab，我参与 diffusion language model 方向的探索性研究，场景主要围绕代码生成。这个问题不只是模型能否生成代码，也包括 decoding strategy 如何改变生成过程本身。",
-        "我更关心其中实际的 trade-off：decoding、inference cost、generation quality 和 controllability 并不是相互独立的变量。更强的控制可能带来更高时延，更快的推理可能影响质量，evaluation 也不能只停在 pass / fail。",
-        "这条线也自然连接到 agent systems。当模型能够通过工具行动时，decoding 和 control 就不再只是模型侧问题，而会变成系统设计问题。",
+        "在 HKU NLP Lab，我作为 Research Assistant 参与 diffusion language model 方向的探索性研究，场景主要围绕代码生成。工作重点包括 decoding strategies、generation quality、inference efficiency，以及 controllability 和 performance 之间的 trade-off。",
+        "这个问题既是方法问题，也是系统问题：decoding strategy、inference cost、generation quality 和 controllability 是耦合的。更强的控制可能带来额外成本，更快的推理可能改变质量，evaluation 也不应该只停留在 binary success。",
+        "这条线也连接到 agent systems。当语言模型被嵌入带有工具的 workflow 后，模型层面的 generation control 和系统层面的 safety boundary 会变得更难分开。",
       ],
       margin: {
-        title: "当前关注",
+        title: "Research keywords",
         lines: [
           "Diffusion language models",
           "Code generation",
@@ -272,18 +273,18 @@ const SITE_CONTENT = {
       },
     },
     systems: {
-      kicker: "03 / System studies",
-      title: "两个项目表面上不同，但都在暴露同一个问题的不同边缘。",
+      kicker: "03 / Research-oriented prototypes",
+      title: "我用原型把系统层面的研究问题具体化。",
       intro:
-        "DeepTutor 和 LinguaLens 一个面向课程学习，一个面向视频字幕理解。它们真正共享的问题是：AI 产品如何组织上下文、行动、解释和用户注意力。",
+        "下面两个系统不作为商业产品展示，而是作为 research-oriented prototypes：它们帮助我观察 LLM 系统中的 context construction、retrieval、explanation、user attention 和 workflow design。",
       cases: [
         {
           name: "DeepTutor",
-          subtitle: "从问答式 tutoring 扩展到结构化学习闭环。",
+          subtitle: "A multi-agent learning system prototype for structured knowledge construction.",
           paragraphs: [
-            "DeepTutor 基于一个开源 multi-agent tutoring framework。我补充了结构化笔记生成、Mock Exam、知识卡片和思维导图等模块，因为学习系统不应该停在一次聊天回答。",
-            "其中最值得推敲的是结构化笔记生成：长课件需要 page-range indexing、hierarchical retrieval 和图片对齐生成，否则输出容易流畅但缺少 grounding。",
-            "最终产品方向被组织成一个闭环：知识管理 -> 练习巩固 -> 研究 -> 输出。Codex 和 Claude Code 在其中更像开发加速器，用来缩短实现和迭代周期。",
+            "DeepTutor 基于一个开源 multi-agent tutoring framework，并扩展了结构化笔记生成、Mock Exam、知识卡片和思维导图等模块。目标是让 tutoring 不停留在一次性回答，而是产生可复用的学习对象。",
+            "其中更有研究意味的是长课件上的 hierarchical RAG pipeline。Page-range indexing 和 image-aligned note generation 可以缓解 fluent summarization 和 grounded learning notes 之间的差距。",
+            "系统最终形成 knowledge management、practice、research 和 output 的工作流。我把它视为研究 educational AI systems 中 retrieval、generation 和 learner feedback 如何组织的原型。",
           ],
           margin: [
             "Multi-Agent",
@@ -291,16 +292,16 @@ const SITE_CONTENT = {
             "Structured Notes",
             "FastAPI",
             "LLM",
-            "Codex",
+            "Learning Systems",
           ],
         },
         {
           name: "LinguaLens",
-          subtitle: "面向跨文化视频理解的 AI 字幕解释工具。",
+          subtitle: "A contextual explanation prototype for cross-cultural video understanding.",
           paragraphs: [
-            "LinguaLens 来自一个很小但真实的观察：字幕可以翻译字面意思，却经常解释不了俚语、文化梗和语境隐喻。产品目标是减少用户跳出播放器搜索的成本。",
-            "交互上我把解释拆成 Quick Explain 和 Deep Explain。Quick Explain 保护观看流，Deep Explain 在用户愿意停下来时补充文化背景和上下文。",
-            "MVP 包括 Chrome Extension、FastAPI、LLM、RAG / 在线检索、DOM 抓取、OCR fallback、多级缓存、来源展示、历史记录和时延埋点。真正的设计重点不是功能数量，而是让解释有用但不打扰。",
+            "LinguaLens 关注另一种 grounding：字幕通常能保留字面意思，却会丢失俚语、文化引用和语境隐喻。系统探索 LLM 如何在不迫使用户离开观看上下文的情况下提供 situated explanations。",
+            "交互上我把解释拆成 Quick Explain 和 Deep Explain。这个拆分让 latency 和 interruption 成为显性的系统设计变量。",
+            "原型结合 Chrome Extension、FastAPI、LLM、RAG / online retrieval、DOM extraction、OCR fallback、caching、source display、history 和 latency tracking。它可以作为解释质量、信任和用户注意力之间关系的小型 case study。",
           ],
           margin: [
             "Chrome Extension",
@@ -308,35 +309,35 @@ const SITE_CONTENT = {
             "LLM",
             "RAG",
             "OCR",
-            "Product Design",
+            "HCI",
           ],
         },
       ],
     },
     context: {
-      kicker: "04 / Context",
-      title: "产品和平台经历让我更清楚真实系统约束是什么样的。",
+      kicker: "04 / Prior technical context",
+      title: "工业经历让我更重视 deployment constraints。",
       paragraphs: [
-        "在滴滴，我参与 App 首页核心业务需求迭代，覆盖需求分析、PRD 编写、技术细评、测试走查、上线跟进，也在订单容器相关模块中协调多方协作。那段经历让我对产品约束有了更具体的感知：系统要能穿过职责边界、排期、边界情况和上线风险。",
-        "在寒武纪，我跟踪大模型论文与推理优化方向，参与模型在 NVIDIA GPU 与寒武纪自研硬件上的测试对比，并输出技术调研与测试结论。那段经历让我对 AI 系统的硬件和适配侧不再只停留在抽象理解。",
-        "这两类经历构成了我现在做系统时的底色：我在意研究品味，也在意一个系统能不能被交付、测试、适配，并被没有写过它的人理解。",
+        "在寒武纪，我跟踪大模型论文与推理优化方向，参与模型在 NVIDIA GPU 与寒武纪自研硬件上的测试对比，并输出技术调研与测试结论。这让我对部署、硬件适配和推理成本有了更具体的认识。",
+        "在滴滴，我参与 App 首页核心业务需求迭代，覆盖需求分析、PRD 编写、技术细评、测试走查、上线跟进和跨团队协作。这段经历让我更关注 reliability、edge cases 和工程边界之间的沟通成本。",
+        "这些经历不是我的主要研究方向，但它们影响了我评价 AI 系统的方式：我不只关心 capability，也关心 reproducibility、latency、adaptation cost，以及系统能否被别人检查和复现。",
       ],
       margin: {
         title: "相关上下文",
         lines: [
-          "DiDi，Product Intern",
           "寒武纪，AI Platform Intern",
-          "PRD / testing / release follow-up",
           "LLM paper tracking / model testing",
+          "DiDi，Product Intern",
+          "PRD / testing / release follow-up",
         ],
       },
     },
     methods: {
       kicker: "05 / Methods",
-      title: "工具本身不是重点，重点是尽快让想法进入可运行状态。",
+      title: "Methods and technical scope.",
       paragraphs: [
-        "我通常会从一个研究问题很快走到一个小系统。原型会暴露很多纸面讨论看不到的假设：数据结构应该怎么设计，时延在哪里出现，用户如何打断流程，模型在哪些地方需要 guardrail。",
-        "具体技术栈会随问题变化，但反复出现的元素包括 Python、Java、SQL、LLM、NLP、RAG、dLLM、FastAPI-style services、产品原型、PRD、Figma、Codex 和 Claude Code。",
+        "我通常会从一个研究问题走到一个小型可控原型。原型会暴露很多纸面讨论不容易看到的假设：数据结构应该如何设计，时延在哪里出现，检索如何改变模型行为，evaluation 应该插在哪里。",
+        "反复出现的技术范围包括 Python、Java、SQL、LLM systems、NLP、RAG、diffusion language models、FastAPI-style services、evaluation design，以及面向 human-AI interaction 的界面原型。",
       ],
       terms: [
         "Python",
@@ -347,19 +348,18 @@ const SITE_CONTENT = {
         "RAG",
         "dLLM",
         "FastAPI",
-        "Figma",
-        "Codex",
-        "Claude Code",
-        "PRD",
+        "Evaluation",
+        "HCI",
+        "System Prototyping",
       ],
     },
     position: {
-      kicker: "06 / Position",
-      title: "一些我现在做系统时会带着的判断。",
+      kicker: "06 / Research position",
+      title: "我希望持续追的问题。",
       paragraphs: [
-        "我关注的不只是模型能力本身，也包括工具调用、权限边界、界面设计和安全约束如何共同影响一个 AI 系统。",
-        "我认为未来 AI 产品的发展不只依赖更强的模型，也依赖更好的 workflow、权限设计、记忆机制和人机交互。",
-        "我更倾向于通过小而可运行的系统快速验证想法。很多时候，一个真正跑起来的 prototype 比很长的概念文档更像有效的 research note。",
+        "我关注的是模型能力、工具调用、检索、界面设计和安全约束如何共同影响一个 AI 系统。",
+        "我认为未来语言模型研究会越来越需要 system-level evaluation：不只是模型能不能给出答案，也包括它在带有 memory、permissions、tools 和 human feedback 的 workflow 中如何表现。",
+        "短期内，我希望继续围绕 diffusion language models、code generation、agent workflows 和 learning systems 做能让这些交互变得可测量的 research prototypes。",
       ],
     },
     footer: {
@@ -399,7 +399,7 @@ function getInitialLanguage() {
     return stored;
   }
 
-  return navigator.language?.toLowerCase().startsWith("zh") ? "zh" : "en";
+  return "en";
 }
 
 function updateLanguageButtons(lang) {
@@ -454,8 +454,7 @@ function renderHero(content) {
     <div class="eyebrow">${content.hero.eyebrow}</div>
     <p class="hero-name">${content.hero.name}</p>
     <h1 class="hero-title">
-      <span>${content.hero.titleLines[0]}</span>
-      <span>${content.hero.titleLines[1]}</span>
+      ${content.hero.titleLines.map((line) => `<span>${line}</span>`).join("")}
     </h1>
     <div class="abstract-block">
       <div class="abstract-label">${content.hero.abstractTitle}</div>
